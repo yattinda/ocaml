@@ -1,0 +1,6 @@
+コンパイル
+
+ocamlopt hello.ml
+ocamlopt -o hello hello.ml
+
+実行はCと同じ
