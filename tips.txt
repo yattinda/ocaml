@@ -1,6 +1,12 @@
 ============ compile & interactive mode ============================
+-----interactive mode -------
 $ rlwrap ocaml
+#use "filename" でファイル読み込み
+OCaml には「トレース」という関数の実行を追跡する機能が用意されています。
+ディレクティブ #trace でトレースする関数名を指定します。
+トレースを解除する場合はディレクティブ #untrace を使います。
 
+-----compile------------
 ocamlopt hello.ml
 ocamlopt -o hello hello.ml
 
