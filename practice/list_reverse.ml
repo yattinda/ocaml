@@ -4,6 +4,6 @@ let rec reverse list1 =
 
 (*演算子 @ は Lisp の関数 append と同じで、2つのリストをつないだリストを返します。*)
 
-let rec reverse = function
+let rec match_reverse = function
   [] -> []
 | x :: list -> reverse list @ [x]
