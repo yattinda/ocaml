@@ -1,3 +1,9 @@
+let rec partition n = function
+  [] -> ([], [])
+| x::xs ->
+let (a, b) = partition n xs in
+           if x < n then (x::a, b) else (a, x::b)
+
 let rec quick_sort = function
   [] -> []
 | x::xs ->
